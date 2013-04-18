@@ -1,0 +1,96 @@
+﻿<Window x:Class="BTP.TutScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TutScreen"  Height="786" ResizeMode="NoResize" WindowStyle="None" Width="1366" WindowState="Maximized" >
+    <Grid Margin="5,0,-5,0">
+        <Image PreviewMouseDown="Image_PreviewMouseDown_1" Source="images/close.jpg" HorizontalAlignment="Left" Height="225" Margin="10,520,0,0" VerticalAlignment="Top" Width="225"/>
+
+        <Button x:Name="true" PreviewMouseDown="true_MouseDown_1" MouseDown="true_MouseDown_1" Content="True" HorizontalAlignment="Left" Margin="739,437,0,0" VerticalAlignment="Top" Width="96" Height="25"/>
+        <Button x:Name="false" PreviewMouseDown="false_MouseDown_1" MouseDown="false_MouseDown_1" Content="False" HorizontalAlignment="Left" Margin="739,467,0,0" VerticalAlignment="Top" Width="96" Height="25"/>
+        <Image x:Name="TutImage" Source="images/ch1.jpg" HorizontalAlignment="Right"  Width="371" Height="371" Margin="0,10,977,0" VerticalAlignment="Top"/>
+        <MediaElement Volume="0" x:Name="TutVideo" HorizontalAlignment="Left" Height="437" Width="437" VerticalAlignment="Top" Margin="398,32,0,0"/>
+        <Image x:Name="HandArrow1" Source="images/handArrow.png" HorizontalAlignment="Left" Height="185" Margin="204,467,0,0" VerticalAlignment="Top" Width="185"/>
+        <Image x:Name="HandArrow2" Visibility="Visible" Source="images/handArrow.png" HorizontalAlignment="Left" Height="185" Margin="498,474,0,0" VerticalAlignment="Top" Width="185"/>
+        <Image x:Name="HandArrow3" Visibility="Visible" Source="images/handArrow.png" HorizontalAlignment="Left" Height="185" Margin="888,474,0,0" VerticalAlignment="Top" Width="185"/>
+        <Image x:Name="beep1" Source="images/test.png" HorizontalAlignment="Left" Height="129" Margin="888,29,0,0" VerticalAlignment="Top" Width="129"/>
+        <Image x:Name="beep2" Source="images/test.png" HorizontalAlignment="Left" Height="129" Margin="849,77,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-45"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="beep3" Source="images/test.png" HorizontalAlignment="Left" Height="129" Margin="959,140,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform X="-103.004" Y="-1.25"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="beep4" Source="images/test.png" HorizontalAlignment="Left" Height="129" Margin="883,174,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-135"/>
+                    <TranslateTransform X="20.161" Y="1.25"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="beep5" Source="images/test.png" HorizontalAlignment="Left" Height="129" Margin="1035,-92,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform X="-70.84" Y="261.004"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="beep6" Source="images/test.png" HorizontalAlignment="Left" Height="129" Margin="947,-19,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="135"/>
+                    <TranslateTransform X="54.826" Y="140.338"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="beep7" Source="images/test.png" HorizontalAlignment="Left" Height="129" Margin="1045,98,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform X="-50.836" Y="-36.746"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="beep8" Source="images/test.png" HorizontalAlignment="Left" Height="130" Margin="983,199,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="45"/>
+                    <TranslateTransform X="-34.667" Y="-176.911"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="dot1" Source="images/dot.png" HorizontalAlignment="Left" Height="100" Margin="935,356,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="dot1_up" Source="images/dot_up.png" HorizontalAlignment="Left" Height="100" Margin="935,356,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="dot1_down" Source="images/dot_down.png" HorizontalAlignment="Left" Height="100" Margin="935,356,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="mouse" Source="images/back.jpg" HorizontalAlignment="Left" Margin="1158,0,0,0" VerticalAlignment="Top" Width="200" Height="776"/>
+        <TextBlock Foreground="White" FontSize="40" Text="Chap No." HorizontalAlignment="Left" Margin="1163,29,-62,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="257"/>
+        <TextBlock x:Name="ChapNoText" Foreground="White" FontSize="90" Text="5" HorizontalAlignment="Left" Margin="1242,82,-142,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="204" Width="258"/>
+        <TextBlock x:Name="textDisplay" Foreground="White" FontSize="250" Text="A" HorizontalAlignment="Left" Margin="1163,149,-391,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="464" Width="586"/>
+        <Image PreviewMouseDown="Image_PreviewMouseDown_2" Source="images/main.png" HorizontalAlignment="Left" Height="272" Margin="1076,450,0,0" VerticalAlignment="Top" Width="272"/>
+
+    </Grid>
+</Window>
